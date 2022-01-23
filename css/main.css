@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-card-1: #F1C40F;
+    --color-card-2: #D35400;
+    --color-card-3: #3498DB;
+    --color-card-4: #27AE60;
+    --color-card-5: #8E44AD;
+    --color-card-6:#7F8C8D;
+    --transtiton-btn: all 0.4s;
+}
+
+body {  
+    background-color: #2E4053;
+    padding: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.contenedor {
+    margin: 50px auto;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minxmax(300px, 1fr));
+    gap: 20px;
+}
+
+.cards {
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.card-img {
+    padding: 5px;
+    width: 100%;
+    height: 300px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 10px;
+}
+
+.card-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.card-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.card-info .subtitle-1 {
+    color: var(--color-card-1);
+}
+
+.card-info .subtitle-2 {
+    color: var(--color-card-2);
+}
+
+.card-info .subtitle-3 {
+    color: var(--color-card-3);
+}
+
+.card-info .subtitle-4 {
+    color: var(--color-card-4);
+}
+
+.card-info .subtitle-5 {
+    color: var(--color-card-5);
+}
+
+.card-info .subtitle-6 {
+    color: var(--color-card-6);
+}
+
+.card-info p {
+    font-size: 1.2rem;
+    line-height: 25px;
+}
+
+.card-info .btn {
+    margin: 10px 0;
+    font-size: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: var(--transtiton-btn);
+    border-radius: 3px;
+}
+
+.card-info .btn-1:hover {
+    background-color: #fff;
+    color: var(--color-card-1);
+    outline: 1px solid var(--color-card-1);
+    transition: var(--transtiton-btn);
+}
+
+.card-info .btn-2:hover {
+    background-color: #fff;
+    color: var(--color-card-2);
+    outline: 1px solid var(--color-card-2);
+    transition: var(--transtiton-btn);
+}
+
+.card-info .btn-3:hover {
+    background-color: #fff;
+    color: var(--color-card-3);
+    outline: 1px solid var(--color-card-3);
+    transition: var(--transtiton-btn);
+}
+
+.card-info .btn-4:hover {
+    background-color: #fff;
+    color: var(--color-card-4);
+    outline: 1px solid var(--color-card-4);
+    transition: var(--transtiton-btn);
+}
+
+.card-info .btn-5:hover {
+    background-color: #fff;
+    color: var(--color-card-5);
+    outline: 1px solid var(--color-card-5);
+    transition: var(--transtiton-btn);
+}
+
+.card-info .btn-6:hover {
+    background-color: #fff;
+    color: var(--color-card-6);
+    outline: 1px solid var(--color-card-6);
+    transition: var(--transtiton-btn);
+}
+
+@media (min-width: 762px) {
+    .contenedor {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1100px) {
+    .contenedor {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
